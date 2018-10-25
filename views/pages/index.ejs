@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- scripts -->
+  <script src="js/jquery.js"></script>
+
+
+</head>
+<body>
+  <h3>Progressive Web App: PhotoBooth</h3>
+
+  <div class="container">
+
+    <div class="app">
+
+      <a href="#" id="start-camera" class="visible">Touch here to start the app.</a>
+      <video muted id="camera-stream"></video>
+      <img id="snap" src=<%= src %> >
+
+      <p id="error-message"></p>
+
+      <div class="controls">
+        <a href="#" id="delete-photo" title="Delete Photo" class="disabled"><i class="material-icons">delete</i></a>
+        <a href="#" id="take-photo" title="Take Photo"><i class="material-icons">camera_alt</i></a>
+        <a href="#" id="download-photo" download="selfie.png" title="Save Photo" class="disabled"><i class="material-icons">file_download</i></a>  
+      </div>
+
+      <!-- Hidden canvas element. Used for taking snapshot of video. -->
+      <canvas></canvas>
+
+    </div>
+  </div>
+  <!-- <img src="http://mighty-citadel-83696.herokuapp.com/images/image.png" alt=""> -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/camera.js"></script>
+<script>
+
+</script>
+</body>
+</html>

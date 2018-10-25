@@ -1,0 +1,23 @@
+{
+  "name": "emotitect",
+  "version": "1.0.0",
+  "description": "\"An app which detects emotions and makes recommendation accordingly\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AwesomeChap",
+  "license": "ISC",
+  "dependencies": {
+    "algorithmia": "^0.3.10",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "kraken": "^0.4.0",
+    "node-oxford-emotion": "^1.0.4",
+    "paralleldots": "^3.2.2",
+    "project-oxford": "^2.0.0",
+    "request": "^2.88.0"
+  }
+}
